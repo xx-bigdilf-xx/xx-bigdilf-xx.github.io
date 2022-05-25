@@ -1,0 +1,278 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #F8F8F8;
+}
+
+h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 3rem;
+	margin: 0.5rem;
+	font-weight: 300;
+}
+
+h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2.4rem;
+	margin: 0.3rem 0rem 0.3rem 0rem;
+	color: #609;
+}
+
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.7rem;
+	margin: 0.5rem 0rem 0.5rem 0rem;
+	color: #609;
+}
+
+h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3rem;
+	font-weight: 500;
+	margin: 0;
+	color: #609;
+}
+
+a {
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+#global {
+	position: relative;
+}
+
+#header {
+	margin: 0rem;
+	padding: 1rem 0rem 0.5rem 0rem;
+	background-color: #609;
+	color: #FFF;
+	
+	#border-style: solid;
+	#border-width: 1px;
+	#border-color: #000;
+}
+
+#title {
+	text-align: center;
+	#border-style: solid;
+	border-width: 1px;
+	border-color: #000;
+}
+
+#ribbonContainer {
+	background-color: #609;
+	color: #FFF;
+	position: sticky;
+	top: 0%;
+	#border-style: solid;
+	border-width: 1px;
+	border-color: #000;
+	padding: 0.5rem;
+	z-index: 20 !important;
+}
+
+#ribbonButtons {
+	#border-style: solid;
+	border-width: 1px;
+	border-color: #000;
+	width: fit-content;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+}
+
+#mainPage {
+	margin: 0rem 5rem 0rem 5rem;
+	padding: 3rem;
+	background-color: #FFF;
+}
+
+#subpage {
+	padding: 0rem 3rem 0rem 3rem;
+}
+
+#twogrid {
+	#overflow: hidden;
+	#display: flex;
+	#justify-content: space-between;
+	display: grid;
+	grid-gap: 0.5rem;
+	grid-template-columns: 1fr 1fr;
+	margin: 1rem 0rem 2rem 0rem;
+}
+
+#twogrid .gridElem {
+	height: 20vw;
+}
+
+#trigrid {
+	#overflow: hidden;
+	#display: flex;
+	#justify-content: space-between;
+	display: grid;
+	grid-gap: 0.5rem;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: 1rem 0rem 2rem 0rem;
+}
+
+#trigrid .gridElem {
+	height: 15vw;
+}
+
+.ribbonButton {
+	width: 10em;
+	height: 3rem;
+	font-size: 1.3rem;
+	position: relative;
+	cursor: pointer;
+}
+
+.ribbonButton:hover .navHighlight {
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+.ribbonButton:hover .navHighlit {
+	width: 100%;
+}
+
+.ribbonButton a {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: 100;
+}
+
+.navHighlight {
+	background-color: #fff;
+	width: 0rem;
+	height: 0.1rem;
+	position: absolute;
+	right: 50%;
+	bottom: 0%;
+	transform: translate(50%, 0);
+	transition: 0.1s;
+	background-color: #FFFFFF00;
+}
+
+.navHighlit {
+	background-color: #fff;
+	width: 80%;
+	height: 0.1rem;
+	position: absolute;
+	right: 50%;
+	bottom: 0%;
+	transform: translate(50%, 0);
+	transition: 0.1s;
+	background-color: #FFCC33;
+}
+
+.gridElem {
+	#width: 33%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	cursor:pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+#twogrid .gridElem:hover .overlay {
+	height: 4.7rem;
+}
+
+#trigrid .gridElem:hover .overlay {
+	height: 4rem;
+}
+
+.gridElem:hover .overlay div{
+	height: 0.2rem;
+}
+
+.gridElem:hover .image {
+	height: 105%;
+	width: 105%;
+	background-position: center;
+	transform: translate(-2.5%, -2.5%);
+	filter: blur(2px);
+}
+
+.gridElem .image {
+	height: 100%;
+	width: 100%;
+	padding: 0 0 0 0;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 0.5s;
+}
+
+.gridElem .overlay {
+	position: absolute;
+	width: 100%;
+	height: 0%;
+	transition: 0.2s;
+	bottom: 0;
+	background-color: #FFFD;
+	overflow: hidden;
+}
+
+.gridElem .overlay h4 {
+	position: absolute;
+	bottom: 1.6rem;
+	left: 1rem;
+}
+
+.gridElem .overlay h3 {
+	position: absolute;
+	bottom: 1.2rem;
+	font-size: 1.7rem;
+	left: 1rem;
+}
+
+.gridElem .overlay p {
+	position: absolute;
+	margin: 0;
+	bottom: 0.4rem;
+	left: 1rem;
+}
+
+.gridElem .overlay div {
+	position: absolute;
+	width: 100%;
+	height: 0rem;
+	top: 0;
+	transition: 0.2s;
+	background-color: #609;
+}
+
+.linkbutton {
+	background-color: #609;
+	color: #FFF;
+	padding: 0.35rem 3rem 0.35rem 3rem;
+	text-decoration: none;
+	border-radius: 0.2rem;
+	cursor: pointer;
+	transition: 0.1s;
+	width: 12rem;
+	margin: 0.3rem 0 0.3rem 0;
+	flex-shrink: 0;
+}
+
+.linkbutton:hover {
+	background-color: #609A;
+}
+
+.linkButtonText {
+	position: absolute;
+	margin: 0;
+	left: 2rem;
+	top: 50%;
+	transform: translate(0, -50%);
+}
