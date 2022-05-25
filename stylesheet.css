@@ -4,6 +4,59 @@ body {
 	background-color: #F8F8F8;
 }
 
+@media (hover: none) {
+	#twogrid .gridElem .overlay {
+		position: absolute;
+		width: 100%;
+		height: 4.9rem;
+		transition: 0.2s;
+		bottom: 0;
+		background-color: #FFFD;
+		overflow: hidden;
+	}
+
+	#trigrid .gridElem .overlay {
+		position: absolute;
+		width: 100%;
+		height: 4rem;
+		transition: 0.2s;
+		bottom: 0;
+		background-color: #FFFD;
+		overflow: hidden;
+	}
+}
+
+@media (hover: hover) {
+	
+	#twogrid .gridElem .overlay {
+		position: absolute;
+		width: 100%;
+		height: 3.2rem;
+		transition: 0.2s;
+		bottom: 0;
+		background-color: #FFFD;
+		overflow: hidden;
+	}
+
+	#trigrid .gridElem .overlay {
+		position: absolute;
+		width: 100%;
+		height: 2.8rem;
+		transition: 0.2s;
+		bottom: 0;
+		background-color: #FFFD;
+		overflow: hidden;
+	}
+	
+	#twogrid .gridElem:hover .overlay {
+		height: 4.9rem;
+	}
+
+	#trigrid .gridElem:hover .overlay {
+		height: 4rem;
+	}
+}
+
 h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 3rem;
@@ -183,14 +236,6 @@ p {
 	overflow: hidden;
 }
 
-#twogrid .gridElem:hover .overlay {
-	height: 4.7rem;
-}
-
-#trigrid .gridElem:hover .overlay {
-	height: 4rem;
-}
-
 .gridElem:hover .overlay div{
 	height: 0.2rem;
 }
@@ -213,34 +258,39 @@ p {
 	transition: 0.5s;
 }
 
-.gridElem .overlay {
-	position: absolute;
-	width: 100%;
-	height: 0%;
-	transition: 0.2s;
-	bottom: 0;
-	background-color: #FFFD;
-	overflow: hidden;
+.gridElem:hover .overlay h4{
+	top: 0.6rem;
 }
 
 .gridElem .overlay h4 {
 	position: absolute;
-	bottom: 1.6rem;
+	top: 0.4rem;
 	left: 1rem;
+	transition: 0.2s;
+}
+
+.gridElem:hover .overlay h3{
+	top: 0.2rem;
 }
 
 .gridElem .overlay h3 {
 	position: absolute;
-	bottom: 1.2rem;
+	top: -0.2rem;
 	font-size: 1.7rem;
 	left: 1rem;
+	transition: 0.2s;
+}
+
+#trigrid .gridElem:hover .overlay p{
+	top: 2.4rem;
 }
 
 .gridElem .overlay p {
 	position: absolute;
 	margin: 0;
-	bottom: 0.4rem;
+	top: 3rem;
 	left: 1rem;
+	transition: 0.2s;
 }
 
 .gridElem .overlay div {
