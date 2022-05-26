@@ -185,9 +185,6 @@ p {
 	#overflow: hidden;
 	#display: flex;
 	#justify-content: space-between;
-	display: grid;
-	grid-gap: 0.5rem;
-	grid-template-columns: 1fr;
 	margin: 1rem 0rem 2rem 0rem;
 }
 
@@ -207,6 +204,7 @@ p {
 
 #trigrid .gridElem {
 	height: 15vw;
+	width: 100%;
 }
 
 .ribbonButton {
@@ -226,12 +224,13 @@ p {
 	width: 100%;
 }
 
-.ribbonButton a {
+.ribbonButton p {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-weight: 100;
+	color: #FFF;
 }
 
 .navHighlight {
