@@ -287,12 +287,8 @@ p {
 
 #mainPage {
 	margin: 0rem 5rem 0rem 5rem;
-	padding: 3rem;
+	padding: 3rem 6rem 3rem 6rem;
 	background-color: #FFF;
-}
-
-#subpage {
-	padding: 0rem 3rem 0rem 3rem;
 }
 
 #twogrid {
